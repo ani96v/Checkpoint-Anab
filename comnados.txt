@@ -1,0 +1,116 @@
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/CheckpointAnaB/.git/
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (master)
+$ git branch -M main
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git remote add origin https://github.com/ani96v/Checkpoint-Anab.git
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ touch main.js index.html
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git add .
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git commit-m "mi primer commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git commit -m "mi primer commit"
+[main (root-commit) fb09f92] mi primer commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 main.js
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 228 bytes | 228.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ani96v/Checkpoint-Anab.git
+ * [new branch]      main -> main
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git branch feature
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ mkdir hardware software SeguridadInformatica
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ touch hardware/resumen.txt software/resumen.txt SeguridadInformatica/resumen.txt
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git push origin feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/ani96v/Checkpoint-Anab/pull/new/feature
+remote:
+To https://github.com/ani96v/Checkpoint-Anab.git
+ * [new branch]      feature -> feature
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git commit -m "misegundocommit"
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SeguridadInformatica/
+        hardware/
+        software/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git add .
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git commit -m "misegundocommit"
+[feature ac31871] misegundocommit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 SeguridadInformatica/resumen.txt
+ create mode 100644 hardware/resumen.txt
+ create mode 100644 software/resumen.txt
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git push origin feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 368 bytes | 368.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ani96v/Checkpoint-Anab.git
+   fb09f92..ac31871  feature -> feature
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (feature)
+$ git checkout main
+Switched to branch 'main'
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git mv main.js resumenHardware.txt
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ git mv index.html resumenSoftware.txt
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ code .
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$ touch comnados.txt
+
+user@DESKTOP-U7E5H9F MINGW64 ~/Desktop/CheckpointAnaB (main)
+$
